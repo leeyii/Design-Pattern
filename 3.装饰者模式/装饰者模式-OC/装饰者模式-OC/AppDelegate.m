@@ -21,7 +21,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    NSLog(@"test1");
     id <Component> comp = [[ConcreteComponent alloc] init];
     comp = [[ConcreteDecoratorA alloc] initComponent:comp];
     comp = [[ConcreteDecoratorB alloc] initComponent:comp];
