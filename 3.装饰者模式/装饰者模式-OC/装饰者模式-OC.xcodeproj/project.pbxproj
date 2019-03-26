@@ -13,6 +13,8 @@
 		07354A51224A72D500BA7738 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07354A50224A72D500BA7738 /* Assets.xcassets */; };
 		07354A54224A72D500BA7738 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07354A52224A72D500BA7738 /* LaunchScreen.storyboard */; };
 		07354A57224A72D500BA7738 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07354A56224A72D500BA7738 /* main.m */; };
+		07354A61224A769100BA7738 /* ConcreteComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 07354A60224A769100BA7738 /* ConcreteComponent.m */; };
+		07354A64224A770300BA7738 /* ConcreteDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = 07354A63224A770300BA7738 /* ConcreteDecorator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,11 @@
 		07354A53224A72D500BA7738 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07354A55224A72D500BA7738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07354A56224A72D500BA7738 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07354A5E224A749800BA7738 /* Component.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Component.h; sourceTree = "<group>"; };
+		07354A5F224A769100BA7738 /* ConcreteComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteComponent.h; sourceTree = "<group>"; };
+		07354A60224A769100BA7738 /* ConcreteComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteComponent.m; sourceTree = "<group>"; };
+		07354A62224A770300BA7738 /* ConcreteDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteDecorator.h; sourceTree = "<group>"; };
+		07354A63224A770300BA7738 /* ConcreteDecorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteDecorator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 		07354A46224A72D400BA7738 /* 装饰者模式-OC */ = {
 			isa = PBXGroup;
 			children = (
+				07354A5D224A742100BA7738 /* Decorator */,
 				07354A47224A72D400BA7738 /* AppDelegate.h */,
 				07354A48224A72D400BA7738 /* AppDelegate.m */,
 				07354A4A224A72D400BA7738 /* ViewController.h */,
@@ -69,6 +77,18 @@
 				07354A56224A72D500BA7738 /* main.m */,
 			);
 			path = "装饰者模式-OC";
+			sourceTree = "<group>";
+		};
+		07354A5D224A742100BA7738 /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				07354A5E224A749800BA7738 /* Component.h */,
+				07354A5F224A769100BA7738 /* ConcreteComponent.h */,
+				07354A60224A769100BA7738 /* ConcreteComponent.m */,
+				07354A62224A770300BA7738 /* ConcreteDecorator.h */,
+				07354A63224A770300BA7738 /* ConcreteDecorator.m */,
+			);
+			path = Decorator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +161,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07354A61224A769100BA7738 /* ConcreteComponent.m in Sources */,
 				07354A4C224A72D400BA7738 /* ViewController.m in Sources */,
+				07354A64224A770300BA7738 /* ConcreteDecorator.m in Sources */,
 				07354A57224A72D500BA7738 /* main.m in Sources */,
 				07354A49224A72D400BA7738 /* AppDelegate.m in Sources */,
 			);

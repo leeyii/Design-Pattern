@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "Component.h"
+#import "Decorator/ConcreteComponent.h"
+#import "Decorator/ConcreteDecorator.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +20,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    id <Component> comp = [[ConcreteComponent alloc] init];
+    comp = [[ConcreteDecoratorA alloc] initComponent:comp];
+    comp = [[ConcreteDecoratorB alloc] initComponent:comp];
+    comp = [[ConcreteDecoratorB alloc] initComponent:comp];
+    comp = [[ConcreteDecoratorC alloc] initComponent:comp];
+    comp = [[ConcreteDecoratorA alloc] initComponent:comp];
+    
+    NSLog(@"%@", comp.sayMsg);
+    
     return YES;
 }
 
